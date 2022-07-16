@@ -1,10 +1,13 @@
+/* GENERAL SETTINGS */
+
 body{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif; 
-margin: auto;
+    margin: auto;
 max-width: 1440px;
   
     
+/* HEADER */
 
 }
 #header-logo{
@@ -22,7 +25,6 @@ nav ul{
     nav li{
         list-style: none;
         text-transform: capitalize;
-       
     }
     nav{
     width: 30%;
@@ -30,7 +32,6 @@ nav ul{
 
     nav ul a{
         text-decoration: none;
-    
     }
 
     nav ul a:hover{
@@ -42,157 +43,111 @@ nav ul{
         height: 45px;
         padding-left: 10px;
     }
+
     h1{
         font-size: 20px;
-        font-weight: bolder;
+   
     }
 
-    .p-opacity{
+    .opacity{
   font-size: 15px;
+  opacity: 0.5;
     }   
     header h1{
         padding-top: 20px;
     }
 
+/* MAIN */
 
-
-#barre-recherche{
+    /* BARRE DE RECHERCHE - FORMUMAIRE */
+.barre-recherche{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    height: 50px;
-    width: 25%;
+    width: 385px;
+   height: 50px;
+   background-color: #f2f2f2;
+   border-radius: 30px;
 }
 
-.icone-barre{
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    background-color: #f2f2f2;
+.barre-recherche i{
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    
+   font-size: 20px;
+   height: 50px;
+   width: 50px;
 }
- .formulaire-barre{
+
+.barre-recherche input{
     height: 50px;
-    display: flex;
-}
-
-.input-ville{
-    border: none;
-    padding-left: 10px;
-    width: 180px;
-    border-top: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
-   font-weight: bold;
-}
-
-.button-barre{
-    height: 50px;
-    width: 130px;
-  background-color: #0065FC;  
-  position: relative;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
- 
- 
-} 
-
-.button{
-    border: none;
-    background-color: none;
-    color: white;
-    background-color: #0065FC; 
-    position: absolute;
-    top: 16px;
-    left: 16px;
+    width: 175px;
+    border: 1px solid #f2f2f2;
     font-weight: bold;
 }
 
-#filtres{
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-margin-top: 15px;
-}
-
-
- 
- 
-#filtres i{
-    color: #0065FC;
-}    
-
-
-.icones-filtres{
-    display: flex;
-  
+.barre-recherche button{
     height: 50px;
-  
-border: 2px solid #f2f2f2;
-border-radius:30px;
-
-}  
-
-.icones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    border-radius: 30px;
-    background-color: #DEEBFF;
-   
-    
-}
-
-
-
-.rubrique{
-    display: flex;   
-width: 125px;
- justify-content: center;    
-}
-
-.filtre-familial{
-    width: 85px;
-    display: flex;
-    justify-content: center;
-}
-
-    .filtre-romantique{
-        width: 110px;
-        display: flex;
-        justify-content: center;
-}
-
-.filtre-animaux{
     width: 160px;
-    display: flex;
-    justify-content: center;}
+    border: none;
+    background-color:#0065FC;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius:30px;
+}
 
-.filtres-infos{
-    display: flex;
-    align-items: center;
+/* FILTRES */
+
+h2{
+    font-size: 15px;
 
 }
+
+.filtres{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 67%;
+align-items: center;
+margin-top: 10px;
+}
+
+.filtres i{
+    padding-left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #deebff;
+    color: #0065FC;
+    width: 50px;
+    height: 50px;
+}
+
+
+.filtres p{
+border: 2px solid #f2f2f2;
+display:flex;
+align-items: center;
+font-weight: bold;
+border-radius: 30px;
+height: 50px;
+width: 200px;
+}
+
+/* .filtres :hover{
+    color: gold;
+} */
 
 .filtres-infos p{
-    padding: 10px;
-    opacity: 0.5;
-    font-size: 15px;
+display: inline-block;
 }
-
 .filtres-infos i{
     color: white;
-    background: #0065FC;
+    background-color: #0065FC;
     border-radius: 30px;
-
-  
 }
+
 
 
 
@@ -200,7 +155,6 @@ width: 125px;
     width: 55%;
     border: 2px solid red;
     background-color: #f2f2f2;
-    
     
 }
 
