@@ -1,15 +1,14 @@
-/* GENERAL SETTINGS */
+/* REGLAGES GENERAUX */
 
 body{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif; 
-    margin: auto;
-max-width: 1440px;
-  
-    
-/* HEADER */
+margin: 25px;
 
 }
+/* HEADER */
+
+
 #header-logo{
     display: flex;
     justify-content: space-between;
@@ -19,21 +18,16 @@ max-width: 1440px;
 }
 nav ul{
     display: flex;
-    justify-content: space-around;
-  
     }
 
     nav li{
         list-style: none;
-        text-transform: capitalize;
-        
-    }
-    nav{
-    width: 30%;
+        text-transform: capitalize;  
     }
 
     nav ul a{
         text-decoration: none;
+        margin: 0 30px;
     }
 
     nav ul a:hover{
@@ -47,13 +41,13 @@ nav ul{
 
     h1{
         font-size: 20px;
-   
     }
 
     .opacity{
   font-size: 15px;
   opacity: 0.5;
     }   
+
     header h1{
         padding-top: 20px;
     }
@@ -61,6 +55,7 @@ nav ul{
 /* MAIN */
 
     /* BARRE DE RECHERCHE - FORMUMAIRE */
+
 .barre-recherche{
     display: flex;
     align-items: center;
@@ -81,14 +76,15 @@ nav ul{
 
 .barre-recherche input{
     height: 50px;
-    width: 175px;
+    width: 190px;
     border: 1px solid #f2f2f2;
     font-weight: bold;
+    padding: 15px;
 }
 
 .barre-recherche button{
     height: 50px;
-    width: 160px;
+    width: 145px;
     border: none;
     background-color:#0065FC;
     color: white;
@@ -105,99 +101,66 @@ h2{
     font-size: 15px;
 
 }
+.filtres h2{
+    margin-right: 25px;
+}
 
 .filtres{
 display: flex;
-justify-content: space-between;
 flex-wrap: wrap;
-width: 60%;
 align-items: center;
 margin-top: 30px;
 
-
 }
 
-.filtres i{
+.filtres-textIcones{
+    display: flex; 
+}
+
+.filtres-rubrique{
+
+    border: 3px solid #f2f2f2;
+    border-radius: 30px; 
     display: flex;
+    height: 50px;
     align-items: center;
+    margin-right: 25px;    
+}
+
+.filtres-rubrique i{
+    display: flex;
     justify-content: center;
-    border-radius: 50%;
-    background-color: #deebff;
+    align-items: center;
     color: #0065FC;
+    border-radius: 50px;
+    background-color: #DEEBFF;
+    height: 50px;
     width: 50px;
     font-size: 20px;
-    
-}
-
-.filtres p{
-font-weight: bold;
-}
-
-
-.filtres-eco {
-display: flex;
-border: 3px solid #f2f2f2;
-border-radius: 30px;
-
-}
-.filtres-eco i{
     position: relative;
     right: 5px;
-}
-  
-.filtres-famille{
-    display: flex;
-border: 3px solid #f2f2f2;
-border-radius: 30px;
 
-    }
-.filtres-famille i{
-position: relative;
-right: 5px;
-}
-    
-.filtres-romantique{
-    display: flex;
-border: 3px solid #f2f2f2;
-border-radius: 30px;
-}             
-
-.filtres-romantique i{
-    position: relative;
-    right: 5px;
-    }
-
-.filtres-animaux{
-    display: flex;
-border: 3px solid #f2f2f2;
-border-radius: 30px;
 }
 
-.filtres-animaux i{
-    position: relative;
-    right: 5px;
-    }
-
-.filtres-eco p{
+.filtres-rubrique button{
+border: none; 
+ background: none;
     padding-left: 5px;
     padding-right: 15px;
+    font-weight: bold;
 }
 
-
-
-.filtres-famille p{
-    padding-left: 5px;
-padding-right: 15px;
+.filtres-rubrique:hover{
+    background-color:#0065FC;
 }
 
-.filtres-romantique p{
-    padding-left: 5px;
-padding-right: 15px;
+.filtres-rubrique button:hover{
+    color: white;
 }
 
-.filtres-animaux p{
-    padding-left: 5px;
-padding-right: 15px;
+.filtres-rubrique i:hover{
+    background-color: white;
+    color: black;
 }
 
 .filtres-infos p{
@@ -210,19 +173,6 @@ display: inline-block;
     background-color: #0065FC;
     border-radius: 30px;
 
-}
-
-
-.filtres-eco:hover, .filtres-famille:hover, .filtres-romantique:hover, .filtres-animaux:hover{
-
-    background-color:#deebff;
-    color: #0065FC;
-}
-
-.filtres-eco:hover i,.filtres-famille:hover i, .filtres-romantique:hover i, .filtres-animaux:hover i{
-
-    background-color:#0065FC;
-    color: white;
 }
 
 .filtres-infos{
