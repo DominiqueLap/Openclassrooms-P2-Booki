@@ -38,7 +38,6 @@ nav ul{
 
     nav ul a:hover{
         border-top: 1px solid #0065FC;
-        color: #0065FC;
     }
     #header-logo img{
         width: 100px;
@@ -98,6 +97,8 @@ nav ul{
     border-bottom-right-radius:15px;
 }
 
+
+
 /* FILTRES */
 
 h2{
@@ -109,9 +110,10 @@ h2{
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-width: 67%;
+width: 60%;
 align-items: center;
 margin-top: 30px;
+
 
 }
 
@@ -123,8 +125,8 @@ margin-top: 30px;
     background-color: #deebff;
     color: #0065FC;
     width: 50px;
- 
     font-size: 20px;
+    
 }
 
 .filtres p{
@@ -177,22 +179,24 @@ border-radius: 30px;
     }
 
 .filtres-eco p{
-    padding-left: 15px;
+    padding-left: 5px;
     padding-right: 15px;
 }
 
+
+
 .filtres-famille p{
-    padding-left: 15px;
+    padding-left: 5px;
 padding-right: 15px;
 }
 
 .filtres-romantique p{
-    padding-left: 15px;
+    padding-left: 5px;
 padding-right: 15px;
 }
 
 .filtres-animaux p{
-    padding-left: 15px;
+    padding-left: 5px;
 padding-right: 15px;
 }
 
@@ -206,6 +210,19 @@ display: inline-block;
     background-color: #0065FC;
     border-radius: 30px;
 
+}
+
+
+.filtres-eco:hover, .filtres-famille:hover, .filtres-romantique:hover, .filtres-animaux:hover{
+
+    background-color:#deebff;
+    color: #0065FC;
+}
+
+.filtres-eco:hover i,.filtres-famille:hover i, .filtres-romantique:hover i, .filtres-animaux:hover i{
+
+    background-color:#0065FC;
+    color: white;
 }
 
 .filtres-infos{
