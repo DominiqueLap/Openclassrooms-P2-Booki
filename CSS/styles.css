@@ -20,11 +20,13 @@ max-width: 1440px;
 nav ul{
     display: flex;
     justify-content: space-around;
+  
     }
 
     nav li{
         list-style: none;
         text-transform: capitalize;
+        
     }
     nav{
     width: 30%;
@@ -66,7 +68,7 @@ nav ul{
     width: 385px;
    height: 50px;
    background-color: #f2f2f2;
-   border-radius: 30px;
+   border-radius: 15px;
 }
 
 .barre-recherche i{
@@ -92,8 +94,8 @@ nav ul{
     background-color:#0065FC;
     color: white;
     font-weight: bold;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius:30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
 }
 
 /* FILTRES */
@@ -109,11 +111,11 @@ justify-content: space-between;
 flex-wrap: wrap;
 width: 67%;
 align-items: center;
-margin-top: 10px;
+margin-top: 30px;
+
 }
 
 .filtres i{
-    padding-left: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,44 +123,104 @@ margin-top: 10px;
     background-color: #deebff;
     color: #0065FC;
     width: 50px;
-    height: 50px;
+ 
+    font-size: 20px;
 }
-
 
 .filtres p{
-border: 2px solid #f2f2f2;
-display:flex;
-align-items: center;
 font-weight: bold;
-border-radius: 30px;
-height: 50px;
-width: 200px;
 }
 
-/* .filtres :hover{
-    color: gold;
-} */
+
+.filtres-eco {
+display: flex;
+border: 3px solid #f2f2f2;
+border-radius: 30px;
+
+}
+.filtres-eco i{
+    position: relative;
+    right: 5px;
+}
+  
+.filtres-famille{
+    display: flex;
+border: 3px solid #f2f2f2;
+border-radius: 30px;
+
+    }
+.filtres-famille i{
+position: relative;
+right: 5px;
+}
+    
+.filtres-romantique{
+    display: flex;
+border: 3px solid #f2f2f2;
+border-radius: 30px;
+}             
+
+.filtres-romantique i{
+    position: relative;
+    right: 5px;
+    }
+
+.filtres-animaux{
+    display: flex;
+border: 3px solid #f2f2f2;
+border-radius: 30px;
+}
+
+.filtres-animaux i{
+    position: relative;
+    right: 5px;
+    }
+
+.filtres-eco p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.filtres-famille p{
+    padding-left: 15px;
+padding-right: 15px;
+}
+
+.filtres-romantique p{
+    padding-left: 15px;
+padding-right: 15px;
+}
+
+.filtres-animaux p{
+    padding-left: 15px;
+padding-right: 15px;
+}
 
 .filtres-infos p{
 display: inline-block;
+
 }
+
 .filtres-infos i{
     color: white;
     background-color: #0065FC;
     border-radius: 30px;
+
+}
+
+.filtres-infos{
+    margin-top: 20px;
 }
 
 
+/* CARDS */
 
-
-.hebergements-marseille{
+/* .hebergements-marseille{
     width: 55%;
     border: 2px solid red;
     background-color: #f2f2f2;
     
 }
-
-
 
 .etoile-coloree{
     color: #0065FC;
@@ -174,7 +236,6 @@ display: inline-block;
     border: 2px solid green;
     justify-content: space-between;
     background-color: white;
-   
    
 }
 
@@ -195,4 +256,4 @@ display: inline-block;
 .hebergement-articles a{
     text-decoration: none;
     
-}
+} */
