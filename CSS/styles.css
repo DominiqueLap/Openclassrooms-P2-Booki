@@ -3,7 +3,8 @@
 body{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif; 
-margin: 25px;
+/* max-width: 1440px;
+margin: auto; */
 
 }
 /* HEADER */
@@ -63,6 +64,7 @@ nav ul{
    height: 50px;
    background-color: #f2f2f2;
    border-radius: 15px;
+   margin-right: 100px;
 }
 
 .barre-recherche i{
@@ -76,10 +78,10 @@ nav ul{
 
 .barre-recherche input{
     height: 50px;
-    width: 190px;
+
     border: 1px solid #f2f2f2;
     font-weight: bold;
-    padding: 15px;
+    padding: 24px;
 }
 
 .barre-recherche button{
@@ -103,6 +105,7 @@ h2{
 }
 .filtres h2{
     margin-right: 25px;
+    margin-left: 15px;
 }
 
 .filtres{
@@ -124,7 +127,7 @@ margin-top: 30px;
     display: flex;
     height: 50px;
     align-items: center;
-    margin-right: 25px;    
+    margin-right: 17px;    
 }
 
 .filtres-rubrique i{
@@ -146,7 +149,7 @@ margin-top: 30px;
 border: none; 
  background: none;
     padding-left: 5px;
-    padding-right: 15px;
+    padding-right: 32px;
     font-weight: bold;
 }
 
@@ -182,45 +185,77 @@ display: inline-block;
 
 /* CARDS */
 
-/* .hebergements-marseille{
-    width: 55%;
-    border: 2px solid red;
-    background-color: #f2f2f2;
+.cards{
+ 
+   display: flex;
+}
+.hebergements{
     
+    width: 63%;
+    height: 720px;
+    padding-left: 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 
-.etoile-coloree{
-    color: #0065FC;
-    display: inline;
-}
-.etoile-non-coloree{
-    color: #f2f2f2;
-    display: inline;
-}
-.hebergement-articles{
+.articles{
+   
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid green;
-    justify-content: space-between;
+}
+
+.articles-lieu{
+    width: 30%;
+    height: 265px;
+    border-radius: 15px;
     background-color: white;
-   
+    margin: 15px;   
+    box-shadow: 1px 3px 8px 1px #e2e2e2
 }
 
-.hebergement-articles article{
-    width: 33%;
-    height: 33%;
-    
+aside{
+    width: 31%;
+    height: 720px;
+    border: 2px solid yellow; 
 }
-.hebergement-articles img{
-    width: 100%;
-    height: 121.45px;
-    object-fit: cover;
+.articles-lieu img {
+    width: 97%;
+    height: 50%;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+object-fit: cover   ;
+padding: 5px;
 }
 
-.hebergement-articles span{
-    opacity: 0.5;
+
+
+.hebergements h2{
+    font-size: 20px;
+    padding-left: 15px;
 }
-.hebergement-articles a{
-    text-decoration: none;
-    
-} */
+.hebergements p{
+    font-weight: bolder;
+    padding-left: 15px;
+}
+h3{
+    font-size: 16   px;
+}
+H4{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+h3,h4{
+    padding-left: 15px;
+}
+.etoile-bleue{
+    color: #0065FC;
+    padding-left: 15px;
+}
+    .etoile-grise{
+        color: #f2f2f2;
+    }
+    .‡
