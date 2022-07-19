@@ -1,11 +1,15 @@
 /* REGLAGES GENERAUX */
 
 body{
-    box-sizing: border-box;
+    
     font-family: 'Raleway', sans-serif; 
-/* max-width: 1440px;
-margin: auto; */
+ max-width: 1440px;
+margin: auto; 
 
+}
+
+*{
+    box-sizing: border-box;
 }
 /* HEADER */
 
@@ -100,10 +104,10 @@ nav ul{
 /* FILTRES */
 
 h2{
-    font-size: 15px;
+    font-size: 20px;
 
 }
-.filtres h2{
+.filtres h2 {
     margin-right: 25px;
     margin-left: 15px;
 }
@@ -188,16 +192,18 @@ display: inline-block;
 .cards{
  
    display: flex;
+   justify-content: space-between;
 }
 .hebergements{
     
-    width: 63%;
-    height: 720px;
+    width: 57%;
+    height: 600px;
     padding-left: 20px;
     background-color: #f2f2f2;
     border-radius: 15px;
     padding-top: 40px;
     padding-bottom: 40px;
+  
 
 }
 
@@ -205,22 +211,19 @@ display: inline-block;
    
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .articles-lieu{
-    width: 30%;
-    height: 265px;
+    width: 26%;
+    height: 175px;
     border-radius: 15px;
     background-color: white;
     margin: 15px;   
-    box-shadow: 1px 3px 8px 1px #e2e2e2
+ 
 }
 
-aside{
-    width: 31%;
-    height: 720px;
-    border: 2px solid yellow; 
-}
+
 .articles-lieu img {
     width: 97%;
     height: 50%;
@@ -239,17 +242,19 @@ padding: 5px;
 .hebergements p{
     font-weight: bolder;
     padding-left: 15px;
+    padding-top: 40px;
 }
 h3{
-    font-size: 16   px;
+    font-size: 15px;
 }
 H4{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: lighter;
 }
 
 h3,h4{
-    padding-left: 15px;
+    padding-left: 10px;
+    margin: 5px;
 }
 .etoile-bleue{
     color: #0065FC;
@@ -258,4 +263,50 @@ h3,h4{
     .etoile-grise{
         color: #f2f2f2;
     }
-    .‡
+
+    aside{
+        width: 39%;
+        height: 600px;
+        padding-top: 40px;
+        border-radius: 15px;
+        background-color:#f2f2f2;
+        margin-left: 40px;
+    }
+
+    .articles-populaires{
+        display: flex;
+        width: 60%;
+        height: 20%; 
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin-left: 30px;
+        margin-bottom: 30px;
+       border-radius: 15px;
+       margin-top: 15px;
+       
+    }
+    .articles-populaires img{
+        width: 45%;
+        height: 100%;
+        object-fit: cover;
+        padding: 5px;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .pop-titre{
+        display: flex;
+        align-items: center;
+        justify-content:space-around
+    }
+
+   a{
+    text-decoration: none;
+   }
+   .articles-lieu:hover{
+    box-shadow: 10px 10px 5px #DEEBFF;
+   }
+   
+
+
+   
