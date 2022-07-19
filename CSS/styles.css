@@ -276,11 +276,11 @@ h3,h4{
     .articles-populaires{
         display: flex;
         width: 60%;
-        height: 20%; 
+        height: 23%; 
         justify-content: center;
         align-items: center;
         background-color: white;
-        margin: 30px;
+        margin: 15px;
        border-radius: 15px;
        margin-top: 15px;
        
@@ -310,3 +310,10 @@ h3,h4{
     color: gold;
    }
 
+.top3{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    height: 100%;
+}
