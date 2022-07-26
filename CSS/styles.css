@@ -63,15 +63,43 @@ nav ul{
 
     /* HEADER MEDIA QUERIES */
 
-  /*tablettes*/
+     /*tablettes*/
 
   @media screen and (min-width:768px) and (max-width: 992px)
   {
     .blocpage{
         margin: 0 25px;}
- 
-        
   }
+
+     /*mobiles*/
+
+@media screen and (max-width:767px) {
+
+    .blocpage{
+        background:pink
+    }
+    #header-logo{
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+    margin: 5px 0;
+    padding: 0;
+    }
+    nav a:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 5px;
+    }
+
+    nav ul li{
+        width: 100%;
+    }
+
+}
+    
+
 
 /* MAIN */
 
@@ -241,7 +269,53 @@ H4{
   {  
     .filtres-textIcones{
     gap: 25px;}
+
   }
+
+  /*laptop et grands ecrans*/
+
+  @media screen and (min-width:768px)
+      {
+       .barre-recherche .bouton-a-cacher-992{
+            display: none;
+        }
+    
+  }
+
+  /*mobiles*/
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .recherche-filtres-texte h1{
+        margin: 25px;  
+        text-align: center;      
+    }
+    .recherche-filtres-texte p{
+        text-align: center;
+    }
+    .barre-recherche{
+        text-align: center;
+    }
+
+    .barre-recherche .bouton-a-cacher-768{
+        display: none;
+     
+    }
+    .barre-recherche .bouton-a-cacher-992{
+        background: none;
+    }
+    .barre-recherche .bouton-a-cacher-992 i{
+        background: #0065FC;
+        position: absolute;
+        top: 0;
+        left:-40px
+        ;
+        border-radius: 15px;
+    }
+  .filtres-rubrique{
+    width: 40%;
+  }
+    
+    }
 
 /* CARDS *//*******************************************************************/
 
@@ -415,6 +489,56 @@ background-color: white;
      }
     }
     
+/*mobiles */
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+
+.conteneur-milieu-page{
+    flex-wrap: wrap-reverse;
+    height: auto;
+}
+
+.conteneur-cartes{
+    width: 100%;
+    height: auto;
+}
+
+.hebergements{
+    width: 100%;
+    height: auto;
+}
+
+aside{
+    margin-left: 0;
+}
+
+.conteneur-populaires{
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.top3{
+    height: auto;
+    gap: 12.5px 0;
+    padding: 25px 0;
+}
+
+.top3 a{
+    height: 30%;
+        
+}
+.top3 a .article-populaires{
+    height: auto;
+}
+.article-populaires img{
+    height: auto;
+}
+.hebergements{
+    background: none;
+}
+}
 
 
 
