@@ -76,12 +76,18 @@ nav ul{
 @media screen and (max-width:767px) {
 
     .blocpage{
-        background:pink
+        background: yellowgreen;
+        
     }
     #header-logo{
         display: block;
         text-align: center;
     }
+
+    #header-logo img{
+        margin-left: 40px;
+    }
+
 
     nav ul {
     margin: 5px 0;
@@ -92,6 +98,7 @@ nav ul{
         border-bottom: 2px solid #0065FC;
         padding-bottom: 5px;
     }
+
 
     nav ul li{
         width: 100%;
@@ -227,6 +234,7 @@ display: inline-block;
 
 }
 
+
 .filtres-infos i{
     color: white;
     background-color: #0065FC;
@@ -310,10 +318,41 @@ H4{
         left:-40px
         ;
         border-radius: 15px;
+        color: white;
     }
-  .filtres-rubrique{
-    width: 40%;
+
+.filtres{
+    margin: 0 15px;
+}
+
+  .filtres-textIcones{
+    margin: 0;
+    gap: 15px
+    ;
   }
+
+    .filtres-rubrique{
+        margin: 0;  
+        height: 40px;
+    }
+    .filtres-rubrique i{
+        height: 40px;
+        width: 40px;
+    }
+   
+    
+    .filtres-rubrique button {
+     
+        padding-right: 10px;
+        margin: 0;
+        font-size: 12px;
+    }    
+    .opacity{font-size: 10px;}
+
+    .filtres-infos{
+        margin: 15px 15px 0 15px;
+    }
+   
     
     }
 
@@ -491,7 +530,7 @@ background-color: white;
     
 /*mobiles */
 
-@media screen and (min-width:320px) and (max-width:767px) {
+@media screen and (max-width:767px) {
 
 
 .conteneur-milieu-page{
@@ -507,6 +546,11 @@ background-color: white;
 .hebergements{
     width: 100%;
     height: auto;
+    margin-top: 30px;
+}
+
+.hebergements h2{
+    margin-bottom: 25px;
 }
 
 aside{
@@ -551,9 +595,7 @@ aside{
     margin: 5px;
 }
 
-.activites{
 
-}
 
 .activites-conteneur{
     display: flex;
@@ -561,6 +603,7 @@ aside{
     ;
     width: 100%;
  margin-bottom: 55px;
+ margin-top: 25px;
     
 }
 
@@ -638,38 +681,74 @@ border-radius: 15px 15px 0 0;}
     ;
 }
 
+
+/*mobiles */
+
+@media screen and (max-width:767px) {
+
+.activites-conteneur{
+    display: flex;
+    flex-direction: column;
+    background: gold;
+    margin-bottom: 40px;
+}
+.conteneur-cartes{
+    gap: 0;
+}
+
+.activites-lieu{
+    height: 20%;
+    width: 100%;
+}
+
+.activites-lieu img{
+    height: auto;
+}
+
+
+.cartes-colonnes{
+    height: 20%;
+    width: 100%;
+}
+}
+
     /* FOOTER*/
 
-footer{
-    background: #f2f2f2;
-}
-    .bloc-footer{
-        display: flex;
-        justify-content: left;
-         gap: 300px;
-         max-width: 1440px;
-        padding-top: 60px;
-         margin: auto;
-       
-    } 
+    footer{
+        background: #f2f2f2;
+    }
+        .bloc-footer{
+            display: flex;
+            justify-content: left;
+             gap: 300px;
+             max-width: 1440px;
+            padding-top: 60px;
+             margin: auto;
+
+           
+        } 
+        
+    .bloc-footer ul{
+        padding: 0;
+    }
     
-.bloc-footer ul{
-    padding: 0;
-}
+    
+    
+    footer li{
+       
+        text-transform: none;
+    }
+    
+    a:visited{
+        text-decoration: none;
+        color: black;
+    } 
+
+/*mobiles */
 
 
 
-footer li{
-   
-    text-transform: none;
-}
-
-a:visited{
-    text-decoration: none;
-    color: black;
-}
-
-/************ MEDIA QUERIES BARRE DE RECHERCHE - cards milieu page **************/
+/************ MEDIA QUERIES FOOTER **************/
   /*tablettes*/
 
   @media screen and (min-width:768px) and (max-width: 992px)
@@ -677,5 +756,15 @@ a:visited{
     .bloc-footer{
       gap: 100px;
         justify-content: center;
+    }
+} 
+ 
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    .bloc-footer{
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 15px;
+   
     }
 }
