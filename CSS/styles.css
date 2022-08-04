@@ -370,7 +370,9 @@ aside{
 }
 
 .articles-populaires-infos{
-    padding-left: 15px;
+    padding: 0 0 5px 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .articles-populaires article{
@@ -396,9 +398,10 @@ height: 150px;
     width: 100%;
 }
 
-.articles-populaires-infos i{
-    padding-top: 55px;
+.articles-populaires-infos-notations{
+    margin-top: auto;
 }
+
 
 .activites{
     padding: 0 30px 30px 30px;
