@@ -19,8 +19,8 @@
         <img src="images/logo/Booki.png" alt="logo Booki">
         <nav>
             <ul>
-               <li> <a href="#ancre-hebergements">Hébergements</a></li>
-                <li><a href="#ancre-activites">Activités</a></li>
+               <li class="hebergements-nav"> <a href="#ancre-hebergements">Hébergements</a></li>
+                <li class="activites-nav"><a href="#ancre-activites">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -32,15 +32,15 @@
             <i class="fa-solid fa-location-dot"></i>
             <form action="traitement.php" method="post" class="formulaire-ville">
                 <input type="text" value="Marseille,France">
+             <button type="submit" class="submit" ></button>
             </form>
-            <form action="traitement.php" method="post" class="recherche-ville">
-                <input type="submit" value="Rechercher">
-            </form>
-            <i class="fa-solid fa-magnifying-glass"></i>
+
+          
         </div>
         <div class="filtres">
             <p>Filtres</p>
             <div class="filtres-categories">
+                <div class="filtres1">
             <form action="traitement.php" method="post">
                 <i class="fa-solid fa-money-bill-1-wave"></i>
                 <input type="button" value="Économique">
@@ -49,6 +49,8 @@
                 <i class="fa-solid fa-child-reaching"></i>
                 <input type="button" value="Familial">
             </form>
+                </div>
+                <div class="filtres2">
             <form action="traitement.php" method="post">
                 <i class="fa-solid fa-heart"></i>
                 <input type="button" value="Romantique">
@@ -57,6 +59,7 @@
                 <i class="fa-solid fa-dog"></i>
                 <input type="button" value="Animaux autorisés">
             </form>
+        </div>
             </div>
         </div>
         <div class="filtres-infos">

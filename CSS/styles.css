@@ -12,9 +12,12 @@ header,main{
 
 /****** HEADER ******/
 
+
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
     
 }
 
@@ -26,13 +29,18 @@ header img {
 }
 
 nav ul{
-    display: flex;
- 
+    display: flex;  
+
+}
+
+
+
+nav ul li a{
+    padding:    2rem;
 }
 
 ul li{
     list-style-type: none;
-    margin: 0 35px ;
 }
 
 a{
@@ -44,8 +52,10 @@ a:visited{
 }
 nav a:hover{
     border-top: 2px solid  #0065FC;
-    padding-top: 10px;
+    padding-top: 35px;
+    color:  #0065FC;
 }
+
 
 /****** MEDIA QUERIES ******/
 
@@ -62,17 +72,28 @@ nav a:hover{
  header{
     flex-direction: column;
     align-items: center;
+    border-bottom: 2px solid #F2F2F2;
  }
 
  header img{
     margin: 15px;
     padding-left: 50px;
   
- }
+  }
+
+
  nav a:hover{
     border-bottom: 2px solid  #0065FC;
     border-top: none;
+    padding-bottom: 16Px;
 }
+
+
+
+
+
+
+
 nav ul{
     padding-left:0;
 }
@@ -90,11 +111,15 @@ h1{
 
 .barre-recherche{
     display: flex;
+
 }
 
-input[type=submit]{
-    position: relative;
-    right: 2px;
+.formulaire-ville input{
+  border: none;
+  padding: 15px 25px;
+  font-weight: bold;
+  border: 1px solid #F2F2F2;
+
 }
 
     .opacity{
@@ -102,32 +127,36 @@ input[type=submit]{
     }
   
 
-.formulaire-ville input, .recherche-ville input{
-    border: none;
-    background: none;
-    height: 50px;
-    border: 1px solid #F2F2F2;
-    font-weight: bold;
-    padding: 0 20px;
-}
-
 .fa-location-dot, .fa-magnifying-glass{
 background: #F2F2F2;
 padding: 17px 20px;
 }
 
-.recherche-ville input{
+.formulaire-ville button{
+    height: 50px;
+    border:none;
     color: white;
 background: #0065FC;
 border-radius: 0 15px 15px 0;
+padding: 0 15px;
+cursor: pointer;
+font-weight: bold;
+position: relative;
+right: 5px;
 
 
+}
+
+
+
+.submit::before{
+    content: "Rechercher";
 }
 
 .fa-location-dot{
     border-radius: 15px 0 0 15px;
     position: relative;
-    left: 2px;
+    left: 4px;
 
 
   
@@ -211,6 +240,13 @@ border-radius: 0 15px 15px 0;
 color: black;
 }
 
+.filtres1{
+    display:flex ;
+}
+.filtres2{
+    display: flex;
+}
+
 
 /****** MEDIA QUERIES ******/
 
@@ -233,11 +269,12 @@ color: black;
 
 {
 
-.barre-recherche{
-    justify-content: flex-start;
-}    
+
 .recherche{
     margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
  .barre-recherche .recherche-ville{
@@ -246,12 +283,44 @@ color: black;
 
  .barre-recherche{
     position: relative;
+    width: 100%;
  }
 
-.barre-recherche .fa-magnifying-glass{
-    position: absolute;
-    left:225px;
+ .formulaire-ville button{
+    border-radius: 15px;
+position: absolute;
+
+
 }
+
+.barre-recherche form {
+    width: 100%;
+    display: inline-block;
+}
+
+.barre-recherche form input{
+    width: 85%;
+
+}
+
+.submit{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+ .submit::before{
+    
+   content: "\f002";
+  
+   
+}
+
+.formulaire-ville input{
+    padding: 15px 0 15px 9px;
+}
+
+
+
 
 .filtres-categories{
     margin: 0
@@ -266,7 +335,49 @@ color: black;
     font-size: 12px;    
 }
 
+.filtres2{
+    display: flex;
+    flex-direction: column;
 
+}
+
+.filtres1{
+    flex-basis: 100%;
+}
+
+.filtres{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+}
+
+@media screen  and (min-width:376px) and (max-width:560px)
+
+{
+    .formulaire-ville button{
+        position: absolute;
+        right:35px
+    }
+}
+
+@media screen  and (min-width:561px) and (max-width:680px)
+
+{
+    .formulaire-ville button{
+        position: absolute;
+        right:55px
+    }
+}
+
+@media screen  and (min-width:681px) and (max-width:767px)
+
+{
+    .formulaire-ville button{
+        position: absolute;
+        right:65px
+    }
 }
 
 /****** CARDS *****/
@@ -404,8 +515,8 @@ height: 150px;
 
 
 .activites{
-    padding: 0 30px 30px 30px;
-    margin: 60px 0 30px 0;
+    /* padding: 0 30px 30px 30px; */
+    margin: 60px 0;
 }
 
 .conteneur-cartes-activtes{
@@ -592,7 +703,7 @@ height: auto;
 
 .activites{
     flex-wrap: wrap;
-    margin: 30px 0 30px 0;
+    margin: 30px;
 }
 
 .activites img{
@@ -618,7 +729,7 @@ footer{
 
 .conteneur-footer{
     display: flex;
-    padding: 30px 60px;
+    padding: 30px 30px;
     ;
 }
 
